@@ -163,7 +163,7 @@ function App() {
         <Router>
             <Container fluid>
                 <Row>
-                    <MyNavbar  loggedIn={loggedIn} onLogOut={handleLogOut} />
+                    <MyNavbar  loggedIn={loggedIn} onLogOut={handleLogOut} user={user} />
                 </Row>
 
                 <Toast show={message !== ''} onClose={() => setMessage('')} delay={3000} autohide>

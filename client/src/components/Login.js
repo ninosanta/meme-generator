@@ -1,12 +1,14 @@
-import { Form, Button, Alert, Modal } from 'react-bootstrap';
+import {Form, Button, Alert, Modal, InputGroup} from 'react-bootstrap';
 import {useState} from "react";
 import {Link} from "react-router-dom";
+import ICON from "../icons/icons"
 
 export function LoginForm(props) {
     const [username, setUsername] = useState("john.doe@polito.it");
     const [password, setPassword] = useState("password");
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(false);  // for the modal
     const [errorMessage, setErrorMessage] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -47,19 +49,34 @@ export function LoginForm(props) {
                     </Alert>
                     <Form.Group controlId="username">
                         <Form.Label>email</Form.Label>
-                        <Form.Control
-                            type="email"
-                            value={username}
-                            onChange={(ev) => setUsername(ev.target.value)}
-                        />
+                        <InputGroup hasValidation>
+                            <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
+                            <Form.Control
+                                type="email"
+                                placeholder="email@example.com"
+                                aria-describedby="inputGroupPrepend"
+                                required
+                                value={username}
+                                onChange={(ev) => setUsername(ev.target.value)}
+                            />
+                        </InputGroup>
                     </Form.Group>
+
                     <Form.Group controlId="password">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control
-                            type="password"
-                            value={password}
-                            onChange={(ev) => setPassword(ev.target.value)}
-                        />
+                        <Form.Label>password</Form.Label>
+                        <InputGroup hasValidation>
+                                <Button id="password-addon" onClick={ () => setShowPassword(old => !old) }>
+                                    { showPassword ? ICON.showPwd : ICON.hidePwd }
+                                </Button>
+                                <Form.Control
+                                    type={ showPassword ? "text" : "password" }
+                                    placeholder="password"
+                                    aria-describedby="inputGroupPrepend"
+                                    required
+                                    value={password}
+                                    onChange={(ev) => setPassword(ev.target.value)}
+                                />
+                        </InputGroup>
                     </Form.Group>
                 </Modal.Body>
                 <Modal.Footer>
