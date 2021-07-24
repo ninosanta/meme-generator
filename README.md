@@ -1,5 +1,8 @@
-# Exam: ["Meme Generator"](./assignment/WA1_exam2_meme_generator_FINAL.pdf)
-## Student: [@ninosanta](https://github.com/ninosanta)
+# Meme Generator
+
+Student | Subject | Exam 
+--------|---------|----- 
+@ninosanta | [Web Applications I](./assignment/course_details.pdf) | [Meme Generator](./assignment/assignement.pdf)   
 
 ## React Client Application Routes
 
