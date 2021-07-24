@@ -1,13 +1,13 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Exam #2 - Meme Generator - Server",
+  "description": "Meme Generator - Server",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
-  "author": "Antonino Santa Rosa s281561",
+  "author": "https://github.com/ninosanta",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
