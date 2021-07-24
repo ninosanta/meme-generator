@@ -277,4 +277,20 @@ Student | Subject | Exam
 |-------|----------|------|
 | john.doe@polito.it | password | John | 
 | johnny.cage@polito.it | password | Johnny |
-| ninosanta@polito.it | password | Nino | 
+| ninosanta@polito.it | password | Nino |
+
+## How to run the app
+Always start the server __before__ the client!
+### Server side:
+``` bash
+cd server
+npm install
+nodemon server.js # note that `npm start` works too, because I customized the package.json
+```
+
+### Client side:
+``` bash
+cd client
+npm install
+npm start
+```
