@@ -2,7 +2,7 @@
 
 Student | Subject | Exam 
 --------|---------|----- 
-@ninosanta | [Web Applications I](./assignment/course_details.pdf) | [Meme Generator](./assignment/assignement.pdf)   
+[@ninosanta](https://github.com/ninosanta) | [Web Applications I](./assignment/course_details.pdf) | [Meme Generator](./assignment/assignement.pdf)   
 
 ## React Client Application Routes
 
