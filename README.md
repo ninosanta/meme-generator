@@ -273,8 +273,8 @@ Student | Subject | Exam
 
 ## Users Credentials
 
-| email | password | name | created memes |
-|-------|----------|------|---------------|
-| john.doe@polito.it | password | John | Bug fixing, Brains, Sad but true - Copy |
-| johnny.cage@polito.it | password | Johnny | Technically the truth - Copy, Sad but true, Programs |
-| ninosanta@polito.it | password | Nino | Technically the truth, Daily dilemma, Programs - Copy |
+| email | password | name | 
+|-------|----------|------|
+| john.doe@polito.it | password | John | 
+| johnny.cage@polito.it | password | Johnny |
+| ninosanta@polito.it | password | Nino | 
