@@ -1,0 +1,138 @@
+/* Global */
+.below-nav {
+    padding-top: 5rem;
+}
+
+.left-list-group-element:hover{ /* triggered when the user hovers
+                                 * over an element with the cursor */
+    background-color: cornflowerblue;
+}
+.task-list-group-item:hover {
+    background-color: cornflowerblue;
+}
+
+/* Add button */
+.fixed-right-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1030;
+    margin: 0 1.5rem 1.5rem 0;
+    border-radius: 50%;
+}
+
+
+/* Text */
+.nav-title {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: cursive;
+    font-size: xx-large;
+    color: #dbd500;
+}
+
+
+.memeTitle {
+    text-align: center;
+    text-shadow: -1px 0 black, -1px 0 black, -1px 0 black, -1px 0 black;
+}
+
+
+.h-center {
+    text-align: center;
+}
+
+
+/* Images */
+.container {
+    position: relative;
+    text-align: center;
+    max-width: 550px;
+    max-height: 600px;
+}
+
+.img-show {
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    border-style: solid;
+    border-image: repeating-linear-gradient(30deg, black, grey, black 20px) 60;
+}
+
+.padding-meme {
+    padding-top: 1rem;
+}
+
+.left-top-1 {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 27%;
+    text-shadow: -1px 0 black;
+}
+
+.left-middle-1 {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 30%;
+    text-shadow: -1px 0 black;
+}
+
+.left-bottom-1  {
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    width: 40%;
+    text-shadow: -1px 0 black;
+}
+
+.center-top-1 {
+    width: 100%;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: -1px 0 black;
+}
+
+.center-middle-1 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-shadow: -1px 0 black;
+}
+
+.center-bottom-1  {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-shadow: -1px 0 black;
+}
+
+.right-top-1 {
+    position: absolute;
+    top: 8%;
+    right: 15%;
+    width: 27%;
+    text-shadow: -1px 0 black;
+}
+
+.right-middle-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 27%;
+    transform: translate(-50%, -50%);
+    text-shadow: -1px 0 black;
+}
+
+.right-bottom-1  {
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+    width: 50%;
+    text-shadow: -1px 0 black;
+}

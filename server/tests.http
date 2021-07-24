@@ -1,0 +1,70 @@
+GET http://localhost:3001/api/memes
+Content-type: text/plain
+
+###
+
+GET http://localhost:3001/api/privatememes
+Content-type: text/plain
+
+###
+
+GET http://localhost:3001/api/images
+Content-type: text/plain
+
+###
+
+
+
+GET http://localhost:3001/api/memes/?visibility=private
+Content-type: text/plain
+
+###
+
+GET http://localhost:3001/api/memes/?visibility=pippo
+Content-type: text/plain
+
+
+###
+
+POST http://localhost:3001/api/sentences
+Content-type: application/json
+
+{ "iID": 1, "text1": "3+2=", "text2": "", "text3": "3-2=", "font": "fantasy", "color": "black" }
+
+###
+
+POST http://localhost:3001/api/memes
+Content-type: application/json
+
+{ "iID": 1, "sID": 6, "uID": 2, "creator": "Johnny",
+  "uname": "johnny.doe@polito.it", "title": "Technically the truth", "visibility": "public" }
+
+###
+
+POST http://localhost:3001/api/tasks
+Content-type: application/json
+
+{ "description" : "nuova", "important" : 1, "private" : 1, "deadline": "2021-05-11", "completed" : 1 }
+
+###
+
+DELETE http://localhost:3001/api/memes/5
+Content-type: text/plain
+
+###
+
+POST http://localhost:3001/api/sessions
+Content-type: application/json
+
+{ "username" : "johnny.cage@polito.it", "password" : "password" }
+
+###
+
+DELETE http://localhost:3001/api/sessions/current
+Content-type: application/json
+
+
+###
+
+GET http://localhost:3001/api/sessions/current
+Content-type: application/json
