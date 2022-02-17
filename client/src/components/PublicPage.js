@@ -3,7 +3,7 @@ import PublicMeme from "./PublicMeme"
 function PublicPage(props) {
     return(
         <>
-            <h1 className="h-center"> Click on a meme to see its proprieties </h1>
+            <h1 className="h-center"> Click on a meme to see its properties </h1>
             <br/>
             {
                props.memeList.map( (m) =>

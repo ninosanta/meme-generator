@@ -8,7 +8,7 @@ function PrivatePage(props) {
 
     return(
         <>
-            <h1 style={{textAlign: "center"}}> Click on an empty meme's spot to see its proprieties </h1>
+            <h1 style={{textAlign: "center"}}> Click on an empty meme's spot to see its properties </h1>
             <br/>
             {
                 props.memeList.map( (m) =>
